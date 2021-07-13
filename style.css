@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dosis:wght@200&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 1px dashed red;
+    text-decoration: none;
+}
+/* 
+FONTE NOME H1
+SUBNOME H2
+FONTE MAIN H3
+FONTE SECOND H4
+FONTE CONTEUDO P
+*/
+
+
+
+h1, h2, h3, h4, p, a{
+    color: #444645;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+
+    overflow: hidden;
+}
+
+.EstruturaGeral{
+    width: 100%;
+    height: 100%;
+
+    position: relative;
+}
+
+.EstruturaGeral .Navegacao{
+    background: #c2c0be;
+    width: 25%;
+    height: 100%;
+
+    position: fixed;
+    left: 0;
+    top: 0;
+
+    z-index: 2;
+}
+    .EstruturaGeral .Navegacao .Address{
+        width: 100%;
+        height: 20%;
+        position: relative;
+    }
+        .EstruturaGeral .Navegacao .Address #AddressBar{
+            background: #444645;
+            color: #c2c0be;
+            width: 6%;
+            height: 60%;
+
+            position: absolute;
+            top: 0;
+            left: 20%; 
+        }
+            .EstruturaGeral .Navegacao .Address #AddressBar i{
+                position: absolute;
+                bottom: 10%;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        .EstruturaGeral .Navegacao .Address #AddressText{
+            position: absolute;
+            top: 40%;
+            left: 30%;
+        }
+    .EstruturaGeral .Navegacao .Name{
+        width: 100%;
+        height: 30%;
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+        .EstruturaGeral .Navegacao .Name h1{
+            font-family: 'Bebas Neue';
+            font-size: 45pt;
+            width: 60%;
+        }
+        .EstruturaGeral .Navegacao .Name h2{
+            font-family: 'Dosis', sans-serif;
+            font-size: 16pt;
+            width: 60%;
+        }
+    .EstruturaGeral .Navegacao .Navigation{
+        width: 100%;
+        height: 50%;
+    }
+
+.EstruturaGeral .ContentMain{
+    background: rgb(233, 230, 234);
+    width: 75%;
+    height: 100%;
+
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    display: flex;
+    flex-direction: column;
+
+    overflow: auto;
+
+    z-index: 1;
+}
